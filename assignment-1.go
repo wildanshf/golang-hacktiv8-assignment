@@ -53,10 +53,10 @@ func main() {
 		os.Exit(1)
 	}
 
-	foundStudent, isError := findStudent(first, allStudents)
+	foundStudent, isNotfound := findStudent(first, allStudents)
 
-	if isError != nil {
-		fmt.Println(isError)
+	if isNotFound != nil {
+		fmt.Println(isNotFound)
 	} else {
 		fmt.Printf("%#v", foundStudent)
 	}
